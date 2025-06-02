@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-  --green: #006400;           
-  --light-green: #9cd884;
-  --yellow: #f8f4c3;
-  --dark-yellow: #cabf45;
+  --green: #006400;
   --border: #000000;
   --text: #111111;
   --bg: #ffffff;
@@ -25,17 +22,22 @@ body {
   padding: 2rem;
   font-size: 1rem;
   line-height: 1.6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 
 .intro {
   font-size: 1.1rem;
   line-height: 1.8;
-  max-width: 960px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto 2rem auto;
   padding: 1rem 1.5rem;
   background-color: #f4ffe4;
-  color: #111;
+  color: var(--text);
   border-left: 0.5rem solid var(--green);
   border-right: 0.5rem solid var(--green);
   border-radius: 6px;
@@ -44,8 +46,9 @@ body {
 
 
 .table-wrapper {
+  width: 100%;
+  max-width: 1000px;
   overflow-x: auto;
-  max-width: 100%;
 }
 
 
@@ -73,7 +76,8 @@ thead {
   color: #ffffff;
 }
 
-th, td {
+th,
+td {
   padding: 1rem;
   border: 2px solid var(--border);
   text-align: left;
@@ -101,7 +105,7 @@ tbody tr:nth-child(even) td {
 
 
 tbody tr:hover td {
-  background-color: #65a76a;
+  background-color: #d7f8d7;
   color: #000;
   transition: background-color 0.2s ease-in-out;
 }
@@ -113,6 +117,70 @@ caption:focus,
 table:focus {
   outline: 3px dashed var(--border);
   outline-offset: 0.2rem;
+}
+
+.zone-legend {
+  font-family: var(--font);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  max-width: 1000px;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--border);
+  background-color: #fefefe;
+  box-shadow: 2px 2px 0 var(--border);
+}
+
+.zone-legend ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.zone-legend li {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+
+
+.zone-legend .zone-3 { background-color: #e0f7fa; }
+.zone-legend .zone-4 { background-color: #d0e9f2; }
+.zone-legend .zone-5 { background-color: #d8f5e2; }
+.zone-legend .zone-6 { background-color: #f2f8d0; }
+.zone-legend .zone-7 { background-color: #fff5cc; }
+.zone-legend .zone-8 { background-color: #ffe6b3; }
+.zone-legend .zone-9 { background-color: #ffd8d8; }
+
+tr.zone-3 td {
+  background-color: #e0f7fa;
+}
+
+tr.zone-4 td {
+  background-color: #d0e9f2;
+}
+
+tr.zone-5 td {
+  background-color: #d8f5e2;
+}
+
+tr.zone-6 td {
+  background-color: #f2f8d0;
+}
+
+tr.zone-7 td {
+  background-color: #fff5cc;
+}
+
+tr.zone-8 td {
+  background-color: #ffe6b3;
+}
+
+tr.zone-9 td {
+  background-color: #ffd8d8;
 }
 
 
