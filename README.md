@@ -3,7 +3,9 @@
 
 <a href="https://backusa920.github.io/8-Bit-Garden-Zone-Catalog/"></a>
 
+  <p>First Version</p>
   <img src="./assets/Screen.png" width="500" >
+  <p>Updated Version</p>
   <img src="./assets/screen1.png" width="500" >
   <img src="./assets/screen2.png" width="500" >
  <ul>
