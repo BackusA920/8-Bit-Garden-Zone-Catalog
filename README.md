@@ -4,6 +4,8 @@
 <a href="https://backusa920.github.io/8-Bit-Garden-Zone-Catalog/"></a>
 
   <img src="./assets/Screen.png" width="500" >
+  <img src="./assets/screen1.png" width="500" >
+  <img src="./assets/screen2.png" width="500" >
  <ul>
     <li>HTML and semantic table structure</li>
     <li>CSS styling</li>
